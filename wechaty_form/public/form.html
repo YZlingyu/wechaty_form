@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>form</title>
+    <link href="form.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="check.js"></script>
+</head>
+
+
+<body>
+<header>
+    <h2>Welcome to join the group! Please input the form first!</h2>
+</header>
+<p style="margin:10px 0;color:#181557;">The ones with red star are necessary to input</p>
+<form action="http://192.168.1.112:8081/process_get" method="GET">
+    <div class="container">
+        <div class="content">
+            <input class="inputContent" type="text" id="contact" name="contact" style="display:none"/>
+            <span class="label">Name:</span><span class="star">*</span>
+            <input class="inputContent" type="text" id="name" name="name"/><br/>
+            <span class="label">Sex:</span><span class="star">*</span>
+            Male:<input class="inputContent" type="radio" name="sex" value="male" id="male"/>
+            Female:<input class="inputContent" type="radio" name="sex" value="female" id="female"/><br/>
+            <span class="label">Age:</span><span class="star">*</span>
+            <input class="inputContent" type="text" id="age" name="age"/><br/>
+            <span class="label">Job:&nbsp;</span>
+            <input class="inputContent" type="text" id="job" name="job"/><br/>
+            <span class="label">Hobby:</span>
+            <input class="inputContent" type="text" id="hobby" name="hobby"/><br/>
+        </div>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+</form>
+</body>
+
+</html>

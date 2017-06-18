@@ -1,0 +1,42 @@
+body{
+  font-family:"Times New Roman";
+  text-align:left;
+  background-color:#ccc;
+}
+h2{
+  text-align:center;
+}
+.container{
+  margin:0 auto;
+  background-color:#fff;
+  box-shadow:5px 5px 5px #313131;
+  border-radius:15px;
+  font-size:16px;
+}
+.row{
+  border-bottom:1px solid #ccc;
+  width:90%;
+  margin:0 auto;
+  padding:0 20px;
+}
+.label{
+  display:inline-block;
+  padding:5px;
+  line-height:20px;
+}
+.label1{
+  display:inline-block;
+  padding:5px;
+  line-height:20px;
+}
+.btn{
+  background-color:#3C8CDB;
+  border:none;
+  height:20px;
+  line-height:20px;
+  width:50px;
+  border-radius:15px;
+  color:#fff;
+  margin:10px;
+  text-align:center;
+}

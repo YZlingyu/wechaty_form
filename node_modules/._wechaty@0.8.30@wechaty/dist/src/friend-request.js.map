@@ -1,0 +1,1 @@
+{"version":3,"file":"friend-request.js","sourceRoot":"","sources":["../../src/friend-request.ts"],"names":[],"mappings":";AAAA;;;;;;;;;;GAUG;;AAEH,qCAG+B;AAG/B;IAME;QACE,YAAG,CAAC,OAAO,CAAC,eAAe,EAAE,eAAe,CAAC,CAAA;QAE7C,EAAE,CAAC,CAAC,CAAC,eAAM,CAAC,cAAc,EAAE,CAAC,CAAC,CAAC;YAC7B,MAAM,IAAI,KAAK,CAAC,yCAAyC,CAAC,CAAA;QAC5D,CAAC;IACH,CAAC;CAKF;AAjBD,sCAiBC;AAED,kBAAe,aAAa,CAAA"}
