@@ -16,5 +16,5 @@ user login by scan the qrcode.
 One who redponses to check can get into the check.html to operate.
 ![ABC](./6.png) 
 Click accept or not. If accept button was clicked, the member can be invited into the group.
-![ABC](.7.png) 
-![ABC](.8.png) 
+![ABC](./7.png) 
+![ABC](./8.png) 
