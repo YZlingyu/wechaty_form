@@ -37,7 +37,7 @@ Wechaty.instance()
         )
     })*/
 
-    .on('message',async function(message){
+    .on('message', function(message){
         const contact = message.from()
         const content = message.content()
         const room = message.room()
@@ -56,13 +56,13 @@ Wechaty.instance()
             message.say("hello how are you")
         }
 
-        if (/swim/.test(content)) {
-            let keyroom = await  Room.find({topic: "swim"})
-            if (keyroom) {
-                await keyroom.add(contact)
-                await keyroom.say("welcome!", contact)
-            }
-        }
+     /*   if (/swim/.test(content)) {
+         let keyroom = Room.find({topic: "swim"})
+         if (keyroom) {
+         keyroom.add(contact)
+         keyroom.say("welcome!", contact)
+         }
+         }*/
     })
         .on('message', function(m){
             const contact = m.from()
@@ -93,7 +93,7 @@ Wechaty.instance()
             if (/swim/.test(content)) {
                 let user = `${contact.name()}`
                 m.say("Please click the following url, and input the form. You will be invited into the group after checked!")
-                m.say('http://192.168.1.112:8081/form?contact='+user)
+                m.say('http://192.168.99.1:8081/form?contact='+user)
 
                 var selectData = function (db, callback) {
                     //连接到表
@@ -131,8 +131,8 @@ Wechaty.instance()
                                     console.log(keyroom)
                                     if (keyroom) {
                                        // keyroom.say("welcome!", who)
-                                        keyroom[0].add(who).then(function () {
-                                            keyroom[0].say("welcome!", who)
+                                        keyroom.add(who).then(function () {
+                                            keyroom.say("welcome!", who)
                                         })
                                     }
                                 })
